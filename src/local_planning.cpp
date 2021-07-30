@@ -6,7 +6,6 @@ namespace Local_Planning
 // 局部规划算法 初始化函数
 void Local_Planner::init(ros::NodeHandle& nh)
 {
-  
     // 根据参数 planning/algorithm_mode 选择局部避障算法: 0为APF,1为VFH
     nh.param("local_planner/algorithm_mode", algorithm_mode, 0);
     // 激光雷达模型,0代表3d雷达,1代表2d雷达
